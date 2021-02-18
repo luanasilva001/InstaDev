@@ -1,0 +1,112 @@
+@using G8InstaDev.Models
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<section class="storys content flex-bt-center">
+    <div class="barra">
+        <div class="fotoUM">
+            <img src="../imgs/storys/vin-diesel 1.png" alt="foto do usuário" class="foto-story">
+            <br>
+            <img src="../imgs/storys/vin_diesel.png" alt="Nome do usuario" class="espacamento">
+        </div>
+
+        <div class="fotoDOIS">
+            <img src="../imgs/storys/gabigordo 1.png" alt="foto do usuário" class="foto-story">
+            <br>
+            <img src="../imgs/storys/gabigordo.png" alt="Nome do usuario" class="espacamento">
+        </div>
+
+        <div class="fotoTRES">
+            <img src="../imgs/storys/will-baiano 1.png" alt="foto do usuário" class="foto-story">
+            <br>
+            <img src="../imgs/storys/will_baiano.png" alt="Nome do usuario" class="espacamento">
+        </div>
+
+        <div class="fotoQUATRO">
+            <img src="../imgs/storys/tony_stark 1.png" alt="foto do usuário" class="foto-story">
+            <br>
+            <img src="../imgs/storys/adriano_stark.png" alt="Nome do usuario" class="espacamento">
+        </div>
+
+        <div class="fotoCINCO">
+            <img src="../imgs/storys/pele 1.png" alt="foto do usuário" class="foto-story">
+            <br>
+            <img src="../imgs/storys/king_pele.png" alt="Nome do usuario" class="espacamento">
+        </div>
+
+        <div class="fotoSEIS">
+            <img src="../imgs/storys/samuel-rosa-bebê 1.png" alt="foto do usuário" class="foto-story">
+            <br>
+            <img src="../imgs/storys/samuel_rosa.png" alt="Nome do usuario" class="espacamento">
+        </div>
+
+        <div class="fotoSETE">
+            <img src="../imgs/storys/chaves_metal 1.png" alt="foto do usuário" class="foto-story">
+            <br>
+            <img src="../imgs/storys/chaves_metal.png" alt="Nome do usuario" class="espacamento">
+        </div>
+    </div>
+</section>
+
+
+<div class="fotoUSUARIO">
+     <a asp-controller="Perfil" asp-route-IdUsuario="0"><img src="../img/Editar/@ViewBag.usuario.Foto"
+            alt="foto de perfil do usuario logado " class="descida imagem-de-perfil"></a>
+    <p class="sobe">@ViewBag.usuario.NomeDoUsuario</p>
+    <br>
+    <p class="espacao"><b>@ViewBag.usuario.NomeCompleto</b></p>
+</div>
+
+<section class="postar flex-bt-center content">
+    <div class="retangulo">
+        <div class="imagem-postar">
+            <img src="~/img/Editar/@ViewBag.Usuario.Foto" alt="foto de perfil do usuario" class="imagem-de-perfil-post">
+            <img src="~/imgs/Postar/Postar.png" alt="texto Postar" class="espaco">
+
+
+            <form method="POST" class="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+
+                <input type="text" placeholder="Digite a descrição da imagem..." class="descricaoImagem" name="Legenda">
+
+                <label for="arquivo">Escolha a imagem</label>
+                <input type="file" name="Imagem" id="arquivo" />
+
+                <button class="btnpostar" type="submit"> Postar </button>
+            </form>
+        </div>
+    </div>
+
+</section>
+@foreach (Publicacao feed in ViewBag.Feeds)
+{
+    <section class="postAdicionado flex-bt-center content">
+        <div class="card">
+            <div class="perfil">
+                <a asp-controller="Perfil" asp-route-IdUsuario="@feed.IdUsuario"><img class="foto-perfil" src="~/img/Editar/@feed.FotoUsuario" alt="Foto de perfil do usuário" width="40px"></a>
+                <a asp-area="Link para excluir uma publicacao" asp-controller="Publicacao" asp-action="Excluir"
+                    asp-route-id="@feed.IdPublicacao"><img src="../imgs/lixo.png" alt="Lixeira" class="lixo"></a>
+                <img src="/img/Feed/@feed.Imagem" alt="Imagem do post @feed.Legenda" width="700">
+            </div>
+
+            <div class="icones">
+                <img id="imagem_curtida" src="../imgs/postAdicionado/Vector.png" alt="icone curtida">
+                <img src="../imgs/postAdicionado/Vector (1).png" alt="icone comentario" class="comentario">
+                <input type="text" placeholder="Comentar..." class="comentario">
+            </div>
+            <div class="comentario-adicionado">
+                <p class="texto-comentario"><b> @feed.NomeUsuario </b>@feed.Legenda</p>
+                <div class="flex-comentario">
+                    <p class="nome"> fausto_silva </p>
+                    <p class="espacamentoo"> Esse cara é fera bicho!!!</p>
+                </div>
+
+                <div class="flex-comentario">
+                    <p class="nome"> yes_baby </p>
+                    <p class="espacamentoo"> thank you</p>
+                </div>
+
+    </section>
+    
+}

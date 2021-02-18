@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+body {
+    margin: 0 0 0 0;
+    background-color: rgba(250, 250, 250, 1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.topo {
+    background-color: white;
+}
+
+.menu {
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    border: 1px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+}
+
+.content {
+    width: 100%;
+    max-width: 58.375em;
+    height: 100%;
+    margin: auto;
+    /* background-color: yellow; */
+}
+
+.flex-bt-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { 
+    /* padding-left: 15px; */
+    padding-top: 8px;
+    
+}
+
+#divBusca {
+    background-color: rgba(250, 250, 250, 1);
+    width: 300px;
+    height: 32px;
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 1);
+    margin: 6px 0px 0px 10%;
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 13px;
+    border: none;
+    border-color: rgba(255, 255, 255, 1);
+    height: 32px;
+    width: 94px;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+#divBusca img {
+    float: left;
+    padding-top: 12px;
+    padding-left: 109px;
+}
+
+.logos {
+    justify-content: space-between;
+
+}
+
+.logoss {
+    padding-left: 25px;
+    padding-top: 3px;
+}
+
+.perfil {
+    margin-top: 2.3125em;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2em;
+}
+
+.perfil img {
+    margin: 0 4.5em;
+}
+
+.info{
+    width: 25em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background-color: red; */
+}
+
+.nick {
+    /* background-color: blue; */
+    font-size: 1.625em;
+    margin-top: -0.5em;
+}
+
+.contadores a{
+    text-decoration: none;
+    color: black;
+}
+
+.contadores {
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1.2em;
+    margin-bottom: -0.4em;
+
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.link-style{
+    text-decoration: none;
+    color: #2686CC;
+}
+
+.publicacoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.solid{
+    border-top: 1px solid #DCDCDC;
+}
+.aba-publicacoes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0.3em;
+    margin-left: 13em;
+    /* background-color: red; */
+}
+
+.aba-publicacoes p{
+    font-size: 0.9em;
+}
+
+.aba-publicacoes img{
+    margin-right: 0.3em;
+    width: 1em;
+    height: 1em;
+    max-height: 1em;
+    max-width: 1em;
+}
+
+.publicacao{
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 3em;
+}
+
+.img-publicacao{
+    width: 26.875em;
+}
+
+.borda-publicacao{
+    /* background-color: red; */
+    width: 31.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-publicacao{
+    width: 90%;
+    height: 85%;
+    /* background-color: yellow; */
+}
+
+.info-publicacao{
+    display: flex;
+    height: 5em;
+    /* background-color: cadetblue; */
+}
+
+.info-publicacao img{
+    width: 4em;
+    height: 4em;
+}
+
+.local{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 0.87em;
+    margin-left: 1em;
+}
+
+.local p:nth-child(2){
+    margin-top: -0.3em;
+}
+
+.curtidas{
+    margin-top: 1.1em;
+}
+
+.CC img{
+    margin-right: 1.5em;
+}
+
+.curtidas p{
+    margin-top: 0.5em;
+    font-size: 0.9em;
+}
+
+.comentarios{
+    height: 12em;
+    /* background-color: yellow; */
+}
+
+
+.comentarios p{
+    
+    margin-right: 1.5em;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.flex-comentario{
+    display: flex;
+    max-width: 33em;
+    font-size: 0.8em;
+    /* background-color: blue; */
+}
+
+.overflow-wrap{
+    overflow-wrap: break-word;
+}
+
+.flex-start{
+    display: flex;
+    width: 90%;
+    
+    /* background-color: blue; */
+}
+
+.rodape-comentarios{
+    font-size: 1em;
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: red; */
+}
+
+.rodape-comentarios p {
+    font-size: 0.85em;
+    /* background-color: blueviolet; */
+    color: #909090;
+}
+

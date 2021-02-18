@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+.boxprincipal {
+    position: absolute;
+    width: 342px;
+    height: 461px;
+    left: 495px;
+    top: 110px;
+    background: #FAFAFA;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    width: 165px;
+    height: 63px;
+    left: 90px;
+    top: 10px;
+}
+
+.texto1 {
+    position: absolute;
+    width: 209px;
+    left: 63px;
+    top: 60px;
+    font-size: 10px;
+    line-height: 19px;
+    text-align: center;
+    color: #909090;
+}
+
+.box {
+    position: absolute;
+    width: 209px;
+    height: 38px;
+    left: 65px;
+    top: 145px;
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.box h3 {
+    position: absolute;
+    width: 26px;
+    height: 15px;
+    left: 10px;
+    bottom: -5px;
+    color: #afafafe3;
+    font-size: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.box1 {
+    position: absolute;
+    width: 209px;
+    height: 38px;
+    left: 65px;
+    top: 190px;
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.box1 h3 {
+    position: absolute;
+    width: 209px;
+    height: 38px;
+    left: 10px;
+    top: -5px;
+    color: #afafafe3;
+    font-size: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.box2 {
+    position: absolute;
+    width: 209px;
+    height: 38px;
+    left: 65px;
+    top: 235px;
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.box2 h3 {
+    position: absolute;
+    width: 209px;
+    height: 38px;
+    left: 10px;
+    top: -5px;
+    color: #afafafe3;
+    font-size: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.box3 {
+    position: absolute;
+    width: 209px;
+    height: 38px;
+    left: 65px;
+    top: 280px;
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.box3 h3 {
+    position: absolute;
+    width: 209px;
+    height: 38px;
+    left: 10px;
+    top: -5px;
+    color: #afafafe3;
+    font-size: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.box4 button {
+    position: absolute;
+    width: 209px;
+    height: 38px;
+    left: 65px;
+    top: 340px;
+    background-color: #2686CC;
+    border-radius: 2px;
+    color: #FFFFFF;
+}
+
+.texto2 {
+    position: absolute;
+    width: 254px;
+    height: 32px;
+    left: 46px;
+    top: 379px;
+    font-size: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 16px;
+    text-align: center;
+    color: #909090;
+}
+
+.boxprincipal2 {
+    position: absolute;
+    height: 75px;
+    left: -1px;
+    top: 465px;
+    background: #FAFAFA;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+}
+
+.boxprincipal2 p {
+    position: absolute;
+    width: 168px;
+    height: 16px;
+    left: 85px;
+    top: 20px;
+    font-size: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #353535;
+}
+
+.final {
+    position: absolute;
+    width: 342px;
+    height: 99px;
+    left: -1px;
+    top: 548px;
+}
+
+.textfinal p {
+    position: absolute;
+    height: 16px;
+    left: 115px;
+    font-size: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #353535;
+}
+
+.img1 img {
+    position: absolute;
+    width: 133px;
+    height: 39px;
+    left: 30px;
+    top: 50px;
+}
+
+.img2 img {
+    position: absolute;
+    width: 133px;
+    height: 39px;
+    right: 30px;
+    top: 50px;
+}

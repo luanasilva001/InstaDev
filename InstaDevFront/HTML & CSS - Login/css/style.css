@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root {
+    --background: #FAFAFA;
+    --white: #ffffff;
+    --blue_button: #2686CC;
+    --border-box: #F1F1F1;
+    --option-color: #909090;
+    --font: 'Montserrat', sans-serif;
+    --font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.login-box {
+    margin: auto;
+    margin-top: 162px;
+    width: 21.375em;
+    height: 29em;
+    display: flex;
+}
+
+.login-box img {
+    max-width: 10.3125em;
+    max-height: 3.9375em;
+    margin-left: 88px;
+    margin-top: 33px;
+    background-color: var(--white);
+}
+
+.login-box-content {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid var(--border-box);
+    width: 21.375em;
+    height: 23.75em;
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    background-color: var(--white);
+    /* background-color: blue; */
+}
+
+.login-box-container {
+    box-sizing: border-box;
+    border: 1px solid var(--border-box);
+    margin-top: 19.1em;
+    width: 21.375em;
+    height: 4.6875em;
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    background-color: var(--white);
+    /* background-color: green; */
+}
+
+.login-box-container p {
+    text-align: center;
+    position: relative;
+    /* background-color: red; */
+    width: 339px;
+    margin-top: 2em;
+    font-family: var(--font);
+    font-size: var(--font-size);
+}
+
+.email-login {
+    position: relative;
+    background-color: var(--background);
+    box-sizing: border-box;
+    border: 1px solid var(--border-box);
+    top: -26em;
+    margin-left: 37px;
+    height: 35px;
+    background-color: var(--background);
+}
+
+.senha-login {
+    position: relative;
+    background-color: var(--background);
+    box-sizing: border-box;
+    border: 1px solid var(--border-box);
+    top: -25.2em;
+    margin-left: 37px;
+    height: 35px;
+    background-color: var(--background);
+}
+
+.submit-login {
+    position: relative;
+    background-color: var(--background);
+    box-sizing: border-box;
+    border: 1px solid var(--border-box);
+    top: -3.8em;
+    margin-left: -75px;
+    height: 35px;
+    color: var(--white);
+    background-color: var(--blue_button);
+}
+
+.login-box-forms p {
+    position: relative;
+    top: -18.3em;
+    margin-left: 162px;
+    color: var(--option-color);
+}
+
+hr {
+    width: 109px;
+    margin-left: 39px;
+    position: relative;
+    /* display: block; */
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    top: -18.9em;
+}
+
+.hr1 {
+    width: 107px;
+    margin-left: 195px;
+    position: relative;
+    /* display: block; */
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    top: -19em;
+}
+
+.login-box-forms a {
+    text-align: center;
+    position: relative;
+    margin-left: 7.875em;
+    top: -18.9em;
+    width: 267px;
+    font-family: var(--font);
+    font-size: var(--font-size);
+}
+
+.login-box-content h3 {
+    text-align: center;
+    position: relative;
+    margin-left: 2.775em;
+    top: -8.7em;
+    width: 267px;
+    font-family: var(--font);
+    font-size: var(--font-size);
+}
+
+.app-store {
+    position: relative;
+    max-width: 132px;
+    max-height: 39px;
+    right: 5em;
+    top: -8.950em;
+    float: left;
+}
+
+.google-play {
+    position: relative;
+    max-width: 132px;
+    max-height: 39px;
+    float: right;
+    bottom: 13.385em;
+}
+
+.erro {
+    color: var(--blue_button);
+}

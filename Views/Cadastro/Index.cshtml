@@ -1,0 +1,60 @@
+@using G8InstaDev.Models
+@{
+    ViewData["Title"] = "Cadastro";
+}
+<body>
+    <header class="boxprincipal">
+        <div class="logo">
+            <img src="img/Instadev.png" alt="logo Instadev">
+        </div>
+
+        <div class="texto1">
+            <h2>Cadastre-se para ver fotos <br> e vídeos dos seus amigos</h2>
+        </div>
+
+        <form action='@Url.Action("Cadastrar")' method="POST" class="boxprincipalforms">
+            <div class="box">
+                <input type="Email" name="Email" placeholder="Email" style="width: 205px; height: 30px;" required>
+            </div>
+
+            <div class="box1">
+                <input type="text" name="NomeCompleto" placeholder="Nome completo" style="width: 205px; height: 30px;" required>
+            </div>
+
+            <div class="box2">
+                <input type="text" name="NomeUsuario"  placeholder="Nome de usuário" style="width: 205px; height: 30px;" required>
+            </div>
+
+            <div class="box3">
+                <input type="password" name="Senha" placeholder="Senha" style="width: 207px; height: 30px;" required>
+            </div> 
+
+            <div class="box4">
+               <button type="submit" style="width: 207px; height: 30px;">Cadastre-se</button>
+                <div class="erro">@TempData.Peek("Mensagem")</div>
+            </div>
+        </form>
+
+        <div class="texto2">
+            <h2>Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies.</h2>
+        </div>
+
+        <section class="boxprincipal2">
+            <div class="text">
+                <p><b>Tem uma conta? <a asp-controller="" asp-action="Index"><span class="conecte">Conecte-se</span></a></b></p>
+            </div>
+        </section>
+
+        <section class="final">
+            <div class="textfinal">
+                <p>Obtenha o aplicativo</p>
+            </div>
+
+            <div class="img">
+                <img src="img/app_store 1.png" alt="logo app store">
+                <img src="img/google_play 1.png" alt="logo google play">
+            </div>
+        </section>
+    </header>
+
+</body>

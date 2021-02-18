@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+body {
+    margin: 0 0 0 0;
+    background-color: rgba(250, 250, 250, 1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.topo {
+    background-color: white;
+}
+
+.menu {
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    border: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    width: 100%;
+    max-width: 58.375em;
+    height: 100%;
+    margin: auto;
+}
+
+.flex-bt-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 8px;
+}
+
+#pesquisa {
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 1);
+    margin: 6px 0px 0px 10%;
+    background-color: rgba(250, 250, 250, 1);
+    width: 300px;
+    height: 32px;
+}
+
+#pesquisa img {
+    float: left;
+    padding-top: 12px;
+    padding-left: 109px;
+}
+
+#search {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 13px;
+    border: none;
+    border-color: rgba(255, 255, 255, 1);
+    height: 32px;
+    width: 94px;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.logos {
+    justify-content: space-between;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+.imagem-de-perfil-header{
+    margin-left: 1em;
+    max-width: 2.2em;
+    border-radius: 100%;
+}
+
+.log {
+    padding-left: 25px;
+    padding-top: 4px;
+}
+
+#quadrado {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 935px;
+    height: 535px;
+    left: 226px;
+    top: 66px;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+}
+
+.foto {
+    max-width: 6em;
+    border-radius: 100%;
+}
+
+.borda {
+    position: absolute;
+    width: 608px;
+    height: 0px;
+    left: -100px;
+    top: 302px;
+    border: 1px solid #F1F1F1;
+    transform: rotate(90deg);
+}
+
+.b2 {
+    position: absolute;
+    width: 60px;
+    height: 0px;
+    left: 0px;
+    top: 203px;
+    border: 1px solid #000000;
+}
+
+.info {
+    position: absolute;
+    left: 244px;
+    top: 75px;
+}
+
+.userfoto {
+    position: absolute;
+    height: 50px;
+    left: 665px;
+    top: 92px;
+}
+
+.username {
+    position: absolute;
+    width: 209px;
+    height: 24px;
+    left: 845px;
+    top: 83px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.nomeUsuario {
+    position: relative;
+    left: 130px;
+    bottom: 80px;
+}
+
+.charger {
+    position: absolute;
+    left: 129px;
+    top: 60px;
+    color: #2686CC;
+}
+
+.nomeuser {
+    position: absolute;
+    width: 50px;
+    height: 19px;
+    left: 590px;
+    top: 195px;
+    color: #000000;
+}
+
+.quadrado2 {
+    position: absolute;
+    width: 354px;
+    height: 30px;
+    left: 650px;
+    top: 205px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.nomedouser {
+    position: absolute;
+    width: 215px;
+    height: 17px;
+    left: 860px;
+    top: 225px;
+    color: black;
+}
+
+.descricao {
+    position: absolute;
+    width: 354px;
+    height: 48px;
+    left: 652px;
+    top: 232px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #909090;
+}
+
+.quadrado3 {
+    position: absolute;
+    width: 354px;
+    height: 30px;
+    left: 650px;
+    top: 337px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.quadrado4 {
+    position: absolute;
+    width: 354px;
+    height: 30px;
+    left: 647px;
+    top: 490px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.descricao2 {
+    position: absolute;
+    width: 354px;
+    height: 32px;
+    left: 651px;
+    top: 365px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #909090;
+}
+
+.username2 {
+    position: absolute;
+    width: 150px;
+    height: 19px;
+    left: 533px;
+    top: 330px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.username3 {
+    position: absolute;
+    width: 118px;
+    height: 19px;
+    left: 594px;
+    top: 485px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.apelido {
+    position: absolute;
+    width: 215px;
+    height: 17px;
+    left: 860px;
+    top: 307px;
+    color: black;
+    font-size: 17px;
+}
+
+.emailcadast {
+    position: absolute;
+    width: 215px;
+    height: 17px;
+    left: 860px;
+    top: 545px;
+    font-size: 13px;
+    color: #000000;
+}
+
+.box {
+    position: absolute;
+    width: 66px;
+    height: 30px;
+    left: 608px;
+    top: 559px;
+    background: #2686CC;
+    border-radius: 2px;
+}
+
+.enviar {
+    position: absolute;
+    width: 39px;
+    height: 16px;
+    left: 855px;
+    top: 613px;
+    font-size: 14px;
+    color: #ffff;
+}
+
+.desativar {
+    position: absolute;
+    width: 354px;
+    height: 16px;
+    left: 822px;
+    top: 553px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2686CC;
+}

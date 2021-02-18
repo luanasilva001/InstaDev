@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - G8InstaDev</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    @switch (@ViewData["Title"])
+    {
+        case "Cadastro":
+            <link rel="stylesheet" href="~/css/cadastro.css">
+            break;
+        case "Login":
+            <link rel="stylesheet" href="~/css/login.css">
+            break;
+        case "Perfil":
+            <link rel="stylesheet" href="~/css/stylePerfil.css">
+            <header class="topo">
+                <div class=" content flex-bt-center">
+                    <div class="menu">
+                        <div class="logo">
+                            <a asp-controller="Feed" asp-action="Listar"><img src="../imgs/Instadev.png"></a>
+                        </div>
+
+                        <div id="divBusca">
+                            <a href="../Perfil/Index.html"><img src="../imgs/Vector.png" alt="Pesquisar" /></a>
+                            <input type="text" id="txtBusca" placeholder="Pesquisar" />
+                            <!-- Pesquisar AutoComplete -->
+                            <script>
+                                $("#txtBusca").autocomplete({
+                                    source: "https://localhost:5001/PublicacaoAPI/ListarUsuario"
+                                });
+                            </script>
+                            <!-- Pesquisar AutoComplete -->
+
+                        </div>
+                        <div class="logos">
+                            <img src="../imgs/home.png" alt="home" class="logoss">
+                            <img src="../imgs/plane 1.png" alt="Plano" class="logoss">
+                            <img src="../imgs/compass 1.png" alt="Compasso" class="logoss">
+                            <img src="../imgs/coraçao.png" alt="Curtidas" class="logoss">
+                            <a asp-controller="Perfil" asp-route-IdUsuario=0 ><img src="/img/Editar/@ViewBag.userLogado.Foto" alt="" class="imagem-de-perfil-header"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            break;
+        case "Home Page":
+            <link rel="stylesheet" href="~/css/style.css">
+            <header class="topo">
+                <div class=" content flex-bt-center">
+                    <div class="menu">
+                        <div class="logo">
+                            <a asp-controller="Feed" asp-action="Listar"><img src="../imgs/Instadev.png"></a>
+                        </div>
+
+                        <div id="divBusca" class="ui-widget">
+                            <a href="../Perfil/Index.html"><img src="../imgs/Vector.png" alt="Pesquisar" /></a>
+                            <input type="text" id="txtBusca" placeholder="Pesquisar" />
+                            <!-- Pesquisar AutoComplete -->
+                            <script>
+                                $("#txtBusca").autocomplete({
+                                    source: "https://localhost:5001/PublicacaoAPI/ListarUsuario"
+                                });
+                            </script>
+                            <!-- Pesquisar AutoComplete -->
+                        </div>
+                        <div class="logos">
+                            <img src="../imgs/home.png" alt="home" class="logoss">
+                            <img src="../imgs/plane 1.png" alt="Plano" class="logoss">
+                            <img src="../imgs/compass 1.png" alt="Compasso" class="logoss">
+                            <img src="../imgs/coraçao.png" alt="Curtidas" class="logoss">
+                            <a asp-controller="Perfil" asp-route-IdUsuario=0><img src="/img/Editar/@ViewBag.usuario.Foto" alt="" class="imagem-de-perfil-header"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            break;
+            case "Editar":
+              <link rel="stylesheet" href="~/css/estilos.css">
+            <header class="topo">
+                <div class=" content flex-bt-center">
+                    <div class="menu">
+                        <div class="logo">
+                            <a asp-controller="Feed" asp-action="Listar"><img src="../imgs/Instadev.png"></a>
+                        </div>
+
+                        <div id="divBusca">
+                            <a href="../Perfil/Index.html"><img src="../imgs/Vector.png" alt="Pesquisar" /></a>
+                            <input type="text" id="txtBusca" placeholder="Pesquisar" />
+                        </div>
+                        <div class="logos">
+                            <img src="../imgs/home.png" alt="home" class="logoss">
+                            <img src="../imgs/plane 1.png" alt="Plano" class="logoss">
+                            <img src="../imgs/compass 1.png" alt="Compasso" class="logoss">
+                            <img src="../imgs/coraçao.png" alt="Curtidas" class="logoss">
+                            <a asp-controller="Perfil" asp-route-IdUsuario=0><img src="/img/Editar/@ViewBag.Usuario.Foto" alt="" class="imagem-de-perfil-header"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+                break;
+        default:
+            break;
+    }
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<body>
+    <main>
+        <section class="login-box">
+            <div class="login-box-content">
+                <picture>
+                    <img src="~/img/Login/Instadev (2).svg" alt="Logo da aplicação InstaDev">
+                </picture>
+                <div class="login-box-container">
+                    <p>Não tem uma conta? <a asp-controller="Usuario" asp-action="Index"><span class="cadastre">Cadastre-se</span></a></p>
+                </div>
+
+
+                <div class="login-box-forms">
+                    <form action='@Url.Action("Logar", "Login")' method="POST" class="login-box-forms">
+
+                        <input type="text" name="Login" id="Login" style="width: 267px;" class="email-login"
+                            placeholder="Username ou Email" required />
+
+
+                        <input type="password" name="Senha" style="width: 267px;" class="senha-login"
+                            placeholder="Senha" required />
+
+                        <input type="submit" style="width: 267px;" value="Entrar" class="submit-login" required />
+                        <div class="erro">@TempData.Peek("Mensagem")</div>
+
+                    </form>
+                    <p>OU</p>
+                    <hr />
+                    <hr class="hr1" />
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <h3>Obtenha o aplicativo.</h3>
+                <a href="#">
+                    <img class="app-store" src="~/img/Login/app_store 1.svg" alt="Logo da app store">
+                    <img class="google-play" src="~/img/Login/google_play 1.svg" alt="Logo do google play">
+                </a>
+            </div>
+        </section>
+    </main>
+</body>

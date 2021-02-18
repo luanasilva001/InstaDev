@@ -1,0 +1,104 @@
+@using Microsoft.AspNetCore.Http
+@{
+    ViewData["Title"] = "Perfil";
+}
+
+<section class="perfil content flex-bt-center">
+    <div>
+        <img src="~/img/Editar/@ViewBag.perfil.Foto" alt="Imagem do perfil" class="imagem-de-perfil">
+    </div>
+    <div class="info">
+        <div class="nick">
+            <p>@ViewBag.perfil.NomeDoUsuario</p>
+        </div>
+        <div class="contadores">
+            <p>@ViewBag.publicacao.Count publicações</p>
+            <a href="">128 seguindo</a>
+            <a href="">214 seguidores</a>
+        </div>
+        <div class="flex-bt-center">
+            <p class="nome">@ViewBag.perfil.NomeCompleto</p>
+            @if(ViewBag.perfil.IdUsuario == ViewBag.logado){
+                <a aria-label="Link para a pagina de editar perfil" asp-controller="Editar" asp-action="Index" class="link-style">Editar Perfil</a>
+                <a aria-label="link para logout" asp-controller="Perfil" asp-action="Sair" class="link-style">Sair</a>
+            }
+        </div>
+    </div>
+</section>
+
+<hr class="solid content">
+
+
+<section class="publicacoes content flex-bt-center">
+    <div class="aba-publicacoes ">
+        <img src="~/img/Perfil/image 1.png" alt="publicações">
+        <p>PUBLICAÇÕES</p>
+    </div>
+
+    @foreach (Publicacao item in ViewBag.publicacao)
+    {
+        <div class="publicacao">
+
+
+        <img src="/img/Feed/@item.Imagem" alt="" class="img-publicacao">
+
+        <div class="borda-publicacao">
+            <div class="content-publicacao">
+                <div class="info-publicacao">
+                    <img src="~/img/Editar/@item.FotoUsuario" alt="Imagem de perfil do usuário" class="imagem-perfil-publicacao">
+                    <div class=" local">
+                        <p class="nome">@item.NomeCompleto</p>
+                        <p>Rio de Janerio, Brazil</p>
+                    </div>
+
+                </div>
+                <div class="curtidas">
+                    <div class="CC">
+                        <img src="~/img/Perfil/coraçao.png" alt="coraçao para like">
+                        <img src="~/img/Perfil/Comment.png" alt="balão para comentário">
+                    </div>
+                    <p>1945 Curtidas</p>
+                </div>
+                <div class="comentarios flex-wrap">
+                    <div class="flex-bt-center">
+                        <div class="flex-comentario">
+                            <p class="nome">fausto_silva</p>
+                            <p class="overflow-wrap">Esse cara é fera bicho!!!</p>
+                        </div>
+                        <img src="~/img/Perfil/LikeComentário.png" alt="">
+                    </div>
+                    <div class="flex-bt-center">
+                        <div class="flex-comentario">
+                            <p class="nome">yes_baby</p>
+                            <p class="overflow-wrap">thank you</p>
+                        </div>
+                        <img src="~/img/Perfil/LikeComentário.png" alt="">
+                    </div>
+                    <div class="flex-bt-center">
+                        <div class="flex-comentario">
+                            <p class="nome">adriano_stark</p>
+                            <p class="overflow-wrap">Quando eu adormecer eu vou sonhar com você. É sempre você.
+                            </p>
+                        </div>
+                        <img src="~/img/Perfil/LikeComentário.png" alt="">
+                    </div>
+                    <div class="flex-bt-center">
+                        <div class="flex-comentario">
+                            <p class="nome">yes_baby</p>
+                            <p class="overflow-wrap">Yes baby!!!</p>
+                        </div>
+                        <img src="~/img/Perfil/LikeComentário.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex-start">
+                <div class="rodape-comentarios">
+                    <p>Ver todos os 585 comentários</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    }
+</section>
